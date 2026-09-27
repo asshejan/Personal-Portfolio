@@ -33,7 +33,18 @@ export interface EducationItem {
   institution: string;
   degree: string;
   period: string;
+  location?: string;
   details?: string;
+}
+
+export interface AwardItem {
+  id: string;
+  title: string;
+  competition: string;
+  role: string;
+  period: string;
+  description: string;
+  linkText?: string;
 }
 
 export const portfolio = {
@@ -42,47 +53,77 @@ export const portfolio = {
     shortName: "Shejan",
     initials: "MS",
     title: "AI Engineer",
-    subtitle: "Building Production AI Systems, Multi-Agent Swarms & Domain LLMs",
+    subtitle: "Generative AI, Multi-Agent Swarms, Domain LLMs & Production AI Systems",
     location: "Dhaka, Bangladesh",
     email: "as.shejan@gmail.com",
     phone: "+880 1701 909 276",
     linkedin: "https://linkedin.com/in/asshejan",
     github: "https://github.com/asshejan",
-    bio: "Artificial Intelligence Engineer with hands-on industry experience building and deploying AI-driven solutions. Skilled in Computer Vision, NLP, automation, AI agents, RAG systems, and LLM fine-tuning, managing the full lifecycle from research to production.",
-    about: "I specialize in turning cutting-edge AI research into robust, high-performance production systems. From multi-agent orchestration graphs and domain-specific LLM fine-tuning to real-time computer vision segmentation and high-throughput vector retrieval, I build intelligent software that drives tangible business value.",
+    bio: "AI Engineer experienced in designing, developing, and deploying production AI applications across generative AI, large language models (LLMs), retrieval-augmented generation (RAG), multi-agent systems, natural language processing, and computer vision. Strong Python background with hands-on experience in QLoRA/PEFT fine-tuning, prompt engineering, embeddings, semantic search, vector databases, model evaluation, FastAPI services, Docker, cloud deployment, and CI/CD.",
+    about: "I build modular, maintainable production AI systems and collaborate with cross-functional teams to translate business requirements into reliable products. From enterprise-grade locally fine-tuned LLMs with advanced tool calling and multi-agent swarms to high-throughput vector retrieval and computer vision backbones, I turn cutting-edge AI research into measurable business value.",
     avatar: "/images/profile.jpg",
-    resume: "/resume/Md_Abu_Sayeam_Mondol_Shejan_CV.pdf",
-    siteUrl: "https://shejan-ai.vercel.app", // Editable canonical URL
+    resume: "/resume/Md%20Abu%20Sayeam%20Mondol%20Shejan_CV.pdf",
+    siteUrl: "https://as-shejan.vercel.app", // Canonical URL matching CV
   },
   heroRotator: [
-    "AI Agents",
-    "RAG Systems",
-    "LLM Applications",
-    "Computer Vision Systems",
-    "AI Automation",
-    "Production AI",
+    "Generative AI & LLMs",
+    "Multi-Agent Swarms",
+    "Production RAG Pipelines",
+    "Bengali & Multilingual NLP",
+    "Computer Vision & Deep Learning",
+    "MLOps & Scalable Deployment",
   ],
   experience: [
     {
-      id: "softvence-betopia",
+      id: "omicon-group",
       role: "AI Engineer",
-      company: "Softvence",
-      group: "Betopia Group",
+      company: "Omicon Group",
       location: "Dhaka, Bangladesh",
-      period: "Jul 2025 – Present",
+      period: "Sep 2026 – Present",
       type: "Full-time, On-site",
       responsibilities: [
-        "Design, develop, and deploy scalable AI solutions for real-world business applications leveraging Machine Learning, Deep Learning, Computer Vision, and Large Language Models.",
-        "Build intelligent AI agents, RAG systems, and workflow automation solutions to enhance operational efficiency and decision-making processes.",
-        "Develop and optimize conversational AI applications, including chatbot systems, knowledge assistants, and autonomous agent workflows.",
-        "Fine-tune, evaluate, and deploy open-source and proprietary AI models for domain-specific use cases and production environments.",
-        "Develop production-ready APIs and backend services, ensuring reliability, scalability, and maintainability of AI-powered applications.",
-        "Implement cloud deployment, containerization, monitoring, and MLOps best practices to support efficient model lifecycle management.",
-        "Collaborate with product managers, designers, and engineering teams to deliver high-quality AI solutions for international clients."
+        "Engineer enterprise-grade, locally fine-tuned LLM solutions with advanced tool-calling capabilities, optimized for Bengali, Banglish, and English understanding and multilingual embedding-based retrieval.",
+        "Build evaluation datasets and testing frameworks to benchmark LLM, RAG, retrieval, and tool-calling performance; continuously optimize models and pipelines for accuracy, reliability, and cost-efficient inference.",
+        "Contribute to AI-powered catalogue automation for Boibazar.com and develop an agentic customer-facing chatbot for intelligent product discovery, assistance, and workflow automation.",
+        "Lead research, development planning, and system architecture design for Lecture Publications' e-learning platform, defining AI capabilities, core components, data flows, integrations, and implementation roadmaps.",
+        "Manage and scale local AI/GPU infrastructure for high-volume production systems, monitoring model performance, resource utilization, latency, and reliability while optimizing deployment and inference workloads."
       ],
       technologies: [
-        "Python", "PyTorch", "TensorFlow", "FastAPI", "Docker", "LangGraph", "LangChain",
-        "Qwen", "Ollama", "ChromaDB", "AWS EC2", "MLflow", "CI/CD"
+        "Local LLMs", "Tool Calling", "RAG Systems", "Bengali/Banglish NLP", "Boibazar.com", "Lecture Publications",
+        "Evaluation Frameworks", "GPU Infrastructure", "vLLM", "Ollama", "Python", "PyTorch", "Docker"
+      ]
+    },
+    {
+      id: "softvence-ai-engineer",
+      role: "AI Engineer",
+      company: "Softvence Agency",
+      location: "Dhaka, Bangladesh",
+      period: "Jan 2026 – Aug 2026",
+      type: "Full-time, On-site",
+      responsibilities: [
+        "Led AI project architecture and implementation planning in collaboration with UI/UX, frontend, and backend teams, translating product requirements into system components, integrations, and delivery plans.",
+        "Worked directly with international clients to understand business and technical requirements, define feasible AI solutions, clarify trade-offs, and plan implementation milestones.",
+        "Coordinated cross-functional execution, tracked delivery progress, resolved technical dependencies, and provided clients with clear project updates throughout the development lifecycle.",
+        "Guided the delivery of agentic AI applications, RAG systems, automation pipelines, scalable APIs, and production deployments focused on reliability and business impact."
+      ],
+      technologies: [
+        "AI Architecture", "Client Relations", "Agentic AI", "RAG Systems", "FastAPI", "Docker", "CI/CD", "Project Planning"
+      ]
+    },
+    {
+      id: "softvence-jr-ai-engineer",
+      role: "Jr. AI Engineer",
+      company: "Softvence Agency",
+      location: "Dhaka, Bangladesh",
+      period: "Jul 2025 – Dec 2025",
+      type: "Full-time, On-site",
+      responsibilities: [
+        "Developed production AI solutions across machine learning, deep learning, large language models, and computer vision using modern frameworks and tools.",
+        "Built agentic AI applications, RAG systems, automation pipelines, and scalable APIs with LangChain, n8n, FastAPI, Docker, and vector databases.",
+        "Deployed production-ready AI systems focused on scalability, cost efficiency, reliability, and measurable business impact."
+      ],
+      technologies: [
+        "Python", "Machine Learning", "Deep Learning", "Computer Vision", "LangChain", "n8n", "FastAPI", "Docker", "Vector Databases"
       ]
     }
   ] as ExperienceItem[],
@@ -90,9 +131,10 @@ export const portfolio = {
     {
       id: "nsu",
       institution: "North South University",
-      degree: "B.Sc. in Computer Science & Engineering",
+      degree: "Bachelor of Science in Computer Science and Engineering",
       period: "2026",
-      details: "Focused on Artificial Intelligence, Machine Learning, Data Structures, and Software Engineering Principles."
+      location: "Dhaka, Bangladesh",
+      details: "Focused on Artificial Intelligence, Machine Learning, Data Structures, Algorithms, and Software Engineering Principles."
     },
     {
       id: "cpsc",
@@ -104,22 +146,22 @@ export const portfolio = {
   ] as EducationItem[],
   projects: [
     {
-      id: "multi-agent-research",
-      title: "Autonomous Local Web Research & Wikipedia-Style Synthesizer",
+      id: "apex-hybrid-ai-lab",
+      title: "APEX Hybrid AI Lab: Local Multi-Agent Orchestration Framework",
       category: "Multi-Agent AI",
       githubUrl: "https://github.com/asshejan",
-      summary: "Production-grade multi-agent AI research system using LangGraph for autonomous web research, fact validation, and structured document synthesis.",
+      summary: "Local-first autonomous multi-agent framework featuring OpenClaw routing, structured JSON ReAct execution, critic-based recovery, and local Ollama inference.",
       highlights: [
-        "Designed planner, browser, fact-checking, and writer agents with graph-based orchestration and shared state management.",
-        "Implemented parallel web extraction using Playwright, BeautifulSoup, and asynchronous Python workflows.",
-        "Developed cross-source verification pipelines for fact validation and contradiction detection."
+        "Built a secure, local-first autonomous agent framework with an OpenClaw master router that performs tool calling and delegates requests to specialized agents powered by local Ollama LLMs.",
+        "Implemented structured JSON ReAct execution, critic-based self-reflection and recovery, response validation, ChromaDB conversational memory, context compression, and scheduled workflows.",
+        "Integrated PC control, Playwright browser automation, a bidirectional Telegram assistant, proactive notifications, and Docker deployment through modular Python components."
       ],
-      tools: ["Python", "LangGraph", "LangChain", "Playwright", "BeautifulSoup", "FastAPI", "Docker"],
+      tools: ["Python", "Ollama", "ChromaDB", "Playwright", "APScheduler", "Telegram Bot API", "Docker"],
       architectureType: "multi-agent",
       metrics: [
-        { label: "Extraction Speed", value: "3.5x Faster" },
-        { label: "Agent Verification", value: "99.2% Accuracy" },
-        { label: "State Graph Nodes", value: "12 States" }
+        { label: "Data Privacy", value: "100% Local" },
+        { label: "Master Router", value: "OpenClaw" },
+        { label: "Execution Graph", value: "ReAct + Critic" }
       ]
     },
     {
@@ -127,12 +169,11 @@ export const portfolio = {
       title: "Fine-Tuning Qwen3-14B for Reasoning & Conversational AI",
       category: "LLM Fine-Tuning",
       githubUrl: "https://github.com/asshejan",
-      summary: "Memory-efficient supervised fine-tuning and quantization pipeline tailored for complex reasoning and domain conversational tasks.",
+      summary: "Supervised instruction-tuning and quantization pipeline tailored for complex reasoning and domain conversational tasks.",
       highlights: [
-        "Fine-tuned Qwen3-14B using QLoRA and Unsloth for specialized reasoning and conversational workflows.",
-        "Implemented memory-efficient training with 4-bit quantization, gradient checkpointing, and LoRA adapters.",
-        "Built end-to-end supervised fine-tuning pipelines using Transformers, TRL, and PEFT.",
-        "Exported optimized models for low-latency local deployment using GGUF, llama.cpp, and Ollama."
+        "Built an end-to-end supervised instruction-tuning and evaluation pipeline for Qwen3-14B using QLoRA and Unsloth for reasoning and conversational tasks.",
+        "Reduced training memory through 4-bit quantization, gradient checkpointing, and LoRA adapters with Hugging Face Transformers, TRL, and PEFT.",
+        "Exported the optimized model to GGUF for low-latency local inference and deployment with llama.cpp and Ollama."
       ],
       tools: ["Python", "Qwen3-14B", "Unsloth", "Transformers", "TRL", "PEFT", "LoRA", "Ollama", "GGUF"],
       architectureType: "llm-finetune",
@@ -144,14 +185,13 @@ export const portfolio = {
     },
     {
       id: "phychat-rag",
-      title: "PhyChat — Local AI Chatbot",
+      title: "PhyChat — Local Retrieval-Augmented Generation Chatbot",
       category: "RAG / Local AI",
       githubUrl: "https://github.com/asshejan",
-      summary: "Local PDF-based conversational AI assistant featuring vector retrieval, streaming responses, and complete data privacy.",
+      summary: "Local intelligent document processing and PDF question-answering application featuring vector retrieval, streaming responses, and complete data privacy.",
       highlights: [
-        "Built a PDF-based conversational AI system using LLaMA 3.2, LangChain, and Retrieval-Augmented Generation.",
-        "Implemented document vectorization and retrieval using Ollama Embeddings and ChromaDB.",
-        "Developed low-latency streaming responses and an interactive chat interface with Streamlit."
+        "Built a local intelligent document processing and PDF question-answering application using Llama 3.2, LangChain, Ollama embeddings, and ChromaDB.",
+        "Implemented document ingestion, chunking, embedding generation, semantic search, context retrieval, streaming responses, and an interactive Streamlit interface."
       ],
       tools: ["Python", "LangChain", "LLaMA 3.2", "ChromaDB", "Ollama", "Streamlit"],
       architectureType: "rag-pipeline",
@@ -163,14 +203,13 @@ export const portfolio = {
     },
     {
       id: "brain-tumor-segmentation",
-      title: "Brain Tumor Segmentation using MRI",
+      title: "Brain Tumor Segmentation from MRI with Knowledge Distillation",
       category: "Computer Vision / Deep Learning",
       githubUrl: "https://github.com/asshejan",
-      summary: "High-precision medical image segmentation framework using deep neural networks and knowledge distillation on BraTS MRI datasets.",
+      summary: "Deep neural network segmentation framework leveraging knowledge distillation and multiple deep backbones on the BraTS dataset.",
       highlights: [
-        "Developed MRI tumor segmentation models leveraging U-Net, EfficientNetB7, and ResUNet deep learning backbones.",
-        "Applied medical image preprocessing, dataset augmentation, and teacher-student knowledge distillation.",
-        "Rigorously evaluated segmentation boundaries using Dice Similarity Coefficient and IoU metrics."
+        "Developed and evaluated deep learning MRI tumor segmentation models with U-Net, EfficientNetB7, and ResUNet using the BraTS dataset.",
+        "Applied preprocessing, augmentation, and knowledge distillation; measured model quality with Dice score and intersection over union (IoU)."
       ],
       tools: ["Python", "TensorFlow", "Keras", "OpenCV", "NumPy", "Matplotlib", "BraTS Dataset"],
       architectureType: "cv-segmentation",
@@ -183,69 +222,104 @@ export const portfolio = {
   ] as Project[],
   skillCategories: [
     {
-      title: "AI / Machine Learning",
+      title: "Generative AI & Agents",
       skills: [
-        { name: "Python" }, { name: "TensorFlow" }, { name: "PyTorch" }, { name: "scikit-learn" },
-        { name: "Keras" }, { name: "NumPy" }, { name: "Pandas" }, { name: "OpenCV" },
-        { name: "LangChain" }, { name: "Ollama" }, { name: "ChromaDB" }, { name: "FAISS" },
-        { name: "Pinecone" }, { name: "MLflow" }
+        { name: "LLMs" }, { name: "Prompt Engineering" }, { name: "Prompt Optimization" },
+        { name: "RAG" }, { name: "AI Assistants" }, { name: "Chatbots" }, { name: "Tool Calling" },
+        { name: "Multi-Agent Systems" }, { name: "LangChain" }, { name: "LangGraph" },
+        { name: "Ollama" }, { name: "Llama" }, { name: "Qwen" }
       ]
     },
     {
-      title: "Web & API",
+      title: "Fine-Tuning & NLP",
+      skills: [
+        { name: "Hugging Face Transformers" }, { name: "TRL" }, { name: "PEFT" }, { name: "LoRA" },
+        { name: "QLoRA" }, { name: "Supervised Fine-Tuning" }, { name: "4-bit Quantization" },
+        { name: "GGUF" }, { name: "Transformer Architecture" }, { name: "Attention Mechanisms" }, { name: "NLP" }
+      ]
+    },
+    {
+      title: "Retrieval & Vector Databases",
+      skills: [
+        { name: "Embeddings" }, { name: "Semantic Search" }, { name: "Knowledge Retrieval" },
+        { name: "ChromaDB" }, { name: "FAISS" }, { name: "Pinecone" }
+      ]
+    },
+    {
+      title: "Machine Learning & Vision",
+      skills: [
+        { name: "PyTorch" }, { name: "TensorFlow" }, { name: "Keras" }, { name: "scikit-learn" },
+        { name: "OpenCV" }, { name: "NumPy" }, { name: "Pandas" }, { name: "Deep Learning" },
+        { name: "Computer Vision" }, { name: "Model Evaluation" }
+      ]
+    },
+    {
+      title: "Backend & Data",
       skills: [
         { name: "FastAPI" }, { name: "Flask" }, { name: "Django" }, { name: "REST APIs" },
-        { name: "Docker" }, { name: "Nginx" }, { name: "Apache" }, { name: "Swagger" },
-        { name: "Postman" }
+        { name: "Swagger" }, { name: "PostgreSQL" }, { name: "MySQL" }, { name: "MongoDB" }
       ]
     },
     {
-      title: "Cloud & DevOps",
+      title: "MLOps, Cloud & Deployment",
       skills: [
-        { name: "AWS EC2" }, { name: "Azure" }, { name: "Google Cloud" }, { name: "Render" },
-        { name: "Firebase" }, { name: "GitHub Actions" }, { name: "Bitbucket" },
-        { name: "CI/CD Pipelines" }, { name: "VPS Deployment" }
+        { name: "MLflow" }, { name: "Docker" }, { name: "AWS EC2" }, { name: "Google Cloud" },
+        { name: "GitHub Actions" }, { name: "Bitbucket" }, { name: "CI/CD" }, { name: "Nginx" },
+        { name: "Apache" }, { name: "VPS Deployment" }
       ]
     },
     {
-      title: "Databases",
-      skills: [
-        { name: "MySQL" }, { name: "MongoDB" }, { name: "PostgreSQL" }
-      ]
-    },
-    {
-      title: "Programming",
+      title: "Programming & Engineering",
       skills: [
         { name: "Python" }, { name: "C" }, { name: "C++" }, { name: "Java" },
-        { name: "JavaScript" }, { name: "TypeScript" }, { name: "Bash" }, { name: "Julia" }
+        { name: "JavaScript" }, { name: "TypeScript" }, { name: "Bash" }, { name: "Git" },
+        { name: "API Design" }
       ]
     },
     {
-      title: "Frontend",
+      title: "Automation & Tools",
       skills: [
-        { name: "React" }, { name: "TailwindCSS" }, { name: "Bootstrap" }, { name: "Streamlit" }
-      ]
-    },
-    {
-      title: "Automation",
-      skills: [
-        { name: "n8n" }, { name: "Make.com" }, { name: "Zapier" }
-      ]
-    },
-    {
-      title: "Tools & Hardware",
-      skills: [
-        { name: "Git" }, { name: "GitHub" }, { name: "Jira" }, { name: "Notion" },
-        { name: "Figma" }, { name: "Canva" }, { name: "Raspberry Pi" }, { name: "PowerShell" }
+        { name: "n8n" }, { name: "Zapier" }, { name: "Postman" }, { name: "PowerShell" }
       ]
     }
   ] as SkillCategory[],
+  awards: [
+    {
+      id: "infinity-ai-buildfest",
+      title: "Finalist",
+      competition: "Infinity AI BuildFest",
+      role: "EduOrbit Platform Architect",
+      period: "Jun 2026",
+      description: "Built and presented EduOrbit, a full-stack AI education platform featuring gamified learning, personalized study assistance, and career-readiness support.",
+      linkText: "Cloud Camp BD"
+    },
+    {
+      id: "webxtream-hackathon",
+      title: "Finalist",
+      competition: "WebXtream Hackathon",
+      role: "Hackathon Competitor",
+      period: "Jul 2025",
+      description: "Developed and presented a working web technology solution through rapid iteration and cross-functional collaboration under competition deadlines.",
+      linkText: "North South University"
+    },
+    {
+      id: "national-robofest",
+      title: "Finalist",
+      competition: "National RoboFest",
+      role: "Robotics Competitor",
+      period: "Sep 2024",
+      description: "Collaborated on robotics problem-solving and hardware–software integration in a national-level competition.",
+      linkText: "East West University"
+    }
+  ] as AwardItem[],
   keyCapabilities: [
-    "End-to-end AI development: from research & prototyping to production cloud server deployment.",
-    "Computer Vision, NLP, LLM fine-tuning (QLoRA, Unsloth), & agentic workflow orchestration.",
-    "Cross-functional collaboration with backend, frontend, and mobile engineering teams.",
-    "Containerized microservices (Docker), high-concurrency FastAPI backends, & MLOps.",
-    "Direct communication with international clients, translating complex requirements into AI architectures.",
-    "Technical leadership and rapid delivery of multidisciplinary projects under tight timelines."
+    "End-to-end AI development: from research & prototyping to high-volume production cloud server deployment.",
+    "Enterprise-grade local LLM solutions with advanced tool calling & multilingual embedding-based retrieval.",
+    "Multi-agent swarm orchestration (OpenClaw, LangGraph) with JSON ReAct execution & critic-based self-reflection.",
+    "Domain-specific LLM fine-tuning (QLoRA, Unsloth, PEFT) with 4-bit quantization & GGUF local export.",
+    "High-throughput vector search (ChromaDB, FAISS, Pinecone) & intelligent RAG pipelines.",
+    "Deep learning computer vision architectures (ResUNet, EfficientNetB7) & medical image knowledge distillation.",
+    "Containerized microservices (Docker), high-concurrency FastAPI backends, CI/CD pipelines, & MLOps.",
+    "Cross-functional collaboration and direct communication with international clients to deliver measurable business impact."
   ]
 };

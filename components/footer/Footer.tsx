@@ -21,7 +21,7 @@ export default function Footer() {
               {portfolio.personal.name}
             </h4>
             <p className="text-xs font-mono text-sky-400">
-              {portfolio.personal.title} — Softvence, Betopia Group
+              {portfolio.personal.title} — Omicon Group
             </p>
           </div>
 

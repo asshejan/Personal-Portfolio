@@ -16,10 +16,10 @@ export default function ArchitectureDiagrams({ type }: ArchitectureDiagramProps)
 
   if (type === "multi-agent") {
     const agents = [
-      { id: 1, name: "Planner Agent", role: "Decomposes topic into sub-queries", icon: <Bot className="w-4 h-4 text-sky-400" /> },
-      { id: 2, name: "Browser Agent", role: "Parallel scraping with Playwright", icon: <Globe className="w-4 h-4 text-indigo-400" /> },
-      { id: 3, name: "Fact Checker", role: "Cross-source validation & filtering", icon: <CheckCircle2 className="w-4 h-4 text-emerald-400" /> },
-      { id: 4, name: "Writer Agent", role: "Wikipedia-style Markdown synthesis", icon: <FileEdit className="w-4 h-4 text-purple-400" /> },
+      { id: 1, name: "OpenClaw Router", role: "Tool calling & specialized delegation", icon: <Bot className="w-4 h-4 text-sky-400" /> },
+      { id: 2, name: "Ollama LLM Agents", role: "Local inference & domain task execution", icon: <Globe className="w-4 h-4 text-indigo-400" /> },
+      { id: 3, name: "Critic & Recovery", role: "Self-reflection, response validation & retry", icon: <CheckCircle2 className="w-4 h-4 text-emerald-400" /> },
+      { id: 4, name: "Memory & Automations", role: "ChromaDB memory, Playwright & Telegram", icon: <FileEdit className="w-4 h-4 text-purple-400" /> },
     ];
 
     return (
@@ -27,9 +27,9 @@ export default function ArchitectureDiagrams({ type }: ArchitectureDiagramProps)
         <div className="flex items-center justify-between border-b border-[var(--border-color)] pb-3 font-mono text-xs text-[var(--text-secondary)]">
           <span className="flex items-center gap-2 text-sky-400 font-bold">
             <span className="w-2 h-2 rounded-full bg-sky-400 animate-pulse" />
-            LangGraph State Graph Architecture
+            OpenClaw Master Router & Multi-Agent Swarm
           </span>
-          <span className="text-[var(--text-muted)]">Graph Orchestration</span>
+          <span className="text-[var(--text-muted)]">Local-First Architecture</span>
         </div>
 
         {/* Nodes Grid */}

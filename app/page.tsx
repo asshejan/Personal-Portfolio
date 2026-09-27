@@ -3,6 +3,7 @@ import ScrollIndicatorLine from "@/components/navigation/ScrollIndicatorLine";
 import ExperienceTimeline from "@/components/experience/ExperienceTimeline";
 import SkillsEcosystem from "@/components/skills/SkillsEcosystem";
 import ProjectShowcase from "@/components/projects/ProjectShowcase";
+import AwardsSection from "@/components/awards/AwardsSection";
 import ContactSection from "@/components/contact/ContactSection";
 import Footer from "@/components/footer/Footer";
 
@@ -21,6 +22,7 @@ export default function Home() {
         <ExperienceTimeline />
         <SkillsEcosystem />
         <ProjectShowcase />
+        <AwardsSection />
         <ContactSection />
         <Footer />
       </main>

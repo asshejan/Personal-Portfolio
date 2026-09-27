@@ -48,7 +48,7 @@ export default function Sidebar() {
             {portfolio.personal.name}
           </h1>
           <p className="text-xs sm:text-sm font-mono text-sky-400 font-semibold">
-            {portfolio.personal.title} — Softvence (Betopia Group)
+            {portfolio.personal.title} — Omicon Group
           </p>
         </div>
 

@@ -9,7 +9,7 @@ export default function JsonLd() {
     "jobTitle": portfolio.personal.title,
     "worksFor": {
       "@type": "Organization",
-      "name": "Softvence, Betopia Group",
+      "name": "Omicon Group",
       "location": "Dhaka, Bangladesh"
     },
     "alumniOf": {
